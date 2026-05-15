@@ -1,5 +1,7 @@
 # Bristol Bus Journey Planner: UX/UI Design Lifecycle
 
+**[🟢 View the Live Interactive App Here](https://souravavi327.github.io/Bristol-Bus-App-UX/app/)**
+
 ## Project Overview
 This project was developed as part of the Digital Design and Development module at the University of the West of England (UWE Bristol). The objective was to research, wireframe, and design a user-centric web application prototype to solve real-world transit challenges for university students navigating the Bristol bus network.
 
