@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bristol Bus App</title>
+
+  <!-- External Styles & Fonts -->
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Sigmar+One&display=swap" rel="stylesheet">
+
+  <script src="/script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Fresca', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      padding: 15px;
+      background: url('https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    .heading {
+      font-family: 'Sigmar One', cursive;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00bfff; /* sky blue */
+    }
+
+    .search {
+      float: right;
+    }
+
+    nav {
+      padding: 15px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .w3-button {
+      margin: 10px;
+      font-family: 'Sigmar One', cursive;
+      font-size: 1.1rem;
+    }
+
+    .text-content {
+      margin-top: 30px;
+      text-align: center;
+      font-family: 'Fresca', sans-serif;
+      line-height: 1.6;
+    }
+
+    .images-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .images-container img {
+      width: 48%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Styling for third image that is under the buttons */
+    .third-image-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 40px;
+    }
+
+    .sign-in-button {
+      float: right;
+      font-family: 'Sigmar One', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="heading">Bristol Bus App</div>
+    <form class="search" action="search.html">
+      <input name="searchterm" placeholder="Search routes..." type="text" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <a href="signin.html" class="w3-button w3-blue sign-in-button">Sign In</a> <!-- Sign In button -->
+  </header>
+
+  <nav>
+    <div class="button-container">
+      <a href="operator.html" class="w3-button w3-blue">Bus Operator Details</a>
+      <a href="map.html" class="w3-button w3-blue">Route Map</a>
+      <a href="fares.html" class="w3-button w3-blue">Fares</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Text content with Fresca font -->
+    <div class="text-content">
+      <h2 style="font-family: 'Sigmar One', cursive;">Welcome to the Bristol Bus App</h2>
+      <p>This app provides essential information about Bristol's bus operators, routes, and fares, making it easier for you to navigate the city.</p>
+      <p>Find route maps, timetable details, and fare information all in one place!</p>
+    </div>
+
+    <!-- Images container -->
+    <div class="images-container">
+      <img src="https://img.freepik.com/premium-photo/bus-public-transport-city-street-generative-ai_446633-26145.jpg" alt="Bus Image 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsD6gv7mMLG_4DhGZDDF1LnOJNpttEnllX924nCzWHiKufWjVVwCtwJpzUDUfa9cF0-jk&usqp=CAU" alt="Bus Image 2">
+    </div>
+
+    <!-- Third Image (below buttons) -->
+    <div class="third-image-container">
+      <img src="https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg" alt="Bus Terminal Image">
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bristol Bus Route Map</title>
+
+    <!-- External Styles & Fonts -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Sigmar+One&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
+    <style>
+      body {
+        font-family: 'Fresca', sans-serif;
+        background-color: #f8f9fa;
+        color: black;
+        margin: 0;
+      }
+
+      header {
+        padding: 15px;
+        background: url('https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+      }
+
+      .heading {
+        font-family: 'Sigmar One', cursive;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #00bfff;
+      }
+
+      .search {
+        float: right;
+      }
+
+      .button-container {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .w3-button {
+        background-color: #00bfff;
+        font-family: 'Sigmar One', cursive;
+        font-size: 1.1rem;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+
+      h1 {
+        font-family: 'Sigmar One', cursive;
+        text-align: center;
+        color: #00bfff;
+      }
+
+      h2 {
+        font-family: 'Sigmar One', cursive;
+        color: #0077b6;
+      }
+
+      iframe {
+        width: 100%;
+        height: 600px;
+        border: none;
+      }
+
+      .home-button {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="heading">
+        <a href="index.html" style="text-decoration: none; color: #00bfff;">Bristol Bus App</a>
+      </div>
+      <form class="search" action="search.html">
+        <input name="searchterm" placeholder="Search routes..." type="text" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <a href="signin.html" class="w3-button sign-in-button">Sign In</a> <!-- Sign In button -->
+    </header>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <a href="operator.html" class="w3-button">Bus Operator Details</a>
+      <a href="map.html" class="w3-button">Route Map</a>
+      <a href="fares.html" class="w3-button">Fares</a>
+    </div>
+
+    <main>
+      <h1>Route Map</h1>
+      <h2>Bristol Bus Service</h2>
+      <iframe src="https://opendata.bristol.gov.uk/datasets/bcc::traffic-survey-locations/explore"></iframe>
+
+      <div class="home-button">
+        <a href="index.html" class="w3-button">Home</a>
+      </div>
+    </main>
+  </body>
+</html>

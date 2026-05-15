@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bus Operator Details</title>
+
+  <!-- External Styles & Fonts -->
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Sigmar+One&display=swap" rel="stylesheet">
+  <script src="/script.js" defer></script>
+  <style>
+    body {
+      font-family: 'Fresca', sans-serif;
+      background-color: #f8f9fa;
+      color: black;
+      padding: 20px;
+      margin: 0;
+    }
+
+    header {
+      padding: 15px;
+      background: url('https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+    }
+
+    .heading {
+      font-family: 'Sigmar One', cursive;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00bfff;
+    }
+
+    .search {
+      float: right;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .w3-button {
+      background-color: #00bfff;
+      font-family: 'Sigmar One', cursive;
+      font-size: 1.1rem;
+      margin: 10px;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    h1 {
+      font-family: 'Sigmar One', cursive;
+      text-align: center;
+      color: #00bfff;
+    }
+
+    h2, h3 {
+      font-family: 'Sigmar One', cursive;
+      color: #0077b6;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .operator-info {
+      width: 60%;
+    }
+
+    .operator-image {
+      width: 35%;
+      margin-left: 20px;
+    }
+
+    .operator-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 30px;
+    }
+
+    .home-button {
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="heading">
+      <a href="index.html" style="text-decoration: none; color: #00bfff;">Bristol Bus App</a>
+    </div>
+    <form class="search" action="search.html">
+      <input name="searchterm" placeholder="Search routes..." type="text" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <a href="signin.html" class="w3-button sign-in-button">Sign In</a> <!-- Sign In button -->
+  </header>
+
+  <!-- Navigation Buttons -->
+  <div class="button-container">
+    <a href="operator.html" class="w3-button">Bus Operator Details</a>
+    <a href="map.html" class="w3-button">Route Map</a>
+    <a href="fares.html" class="w3-button">Fares</a>
+  </div>
+
+  <main>
+    <div class="content">
+      <div class="operator-info">
+        <h1>Bus Operator Details</h1>
+
+        <h2>First West of England</h2>
+        <p>First Bus is the main operator in the Bristol area, offering regular city, local, and regional routes. They also provide student, senior, and group passes. In addition, they offer a wide range of services including evening and weekend buses, and many routes are tailored to provide easy access to key locations like shopping centers, hospitals, and transport hubs.</p>
+        
+        <h2>Stagecoach</h2>
+        <p>Stagecoach operates some regional routes and connects Bristol with nearby towns. Their services are known for reliability and competitive fares. They also offer convenient timetables with buses running frequently, especially during peak hours, making it easier to travel across the city and beyond. Stagecoach is committed to maintaining high safety standards and reducing environmental impact.</p>
+        
+        <h2>Abus</h2>
+        <p>A smaller, local operator offering niche services and contract-based community routes. Abus provides tailored services for elderly and disabled passengers, offering flexibility in routes to cater to local community needs. They also run services for schools, private hire, and specific contract routes, ensuring that passengers have access to transport when they need it the most.</p>
+      </div>
+
+      <div class="operator-image">
+        <img src="https://img.freepik.com/premium-photo/bus-public-transport-city-street-generative-ai_446633-26145.jpg" alt="Buses in the city" />
+      </div>
+    </div>
+
+    <!-- Embed Dataset from ArcGIS -->
+    <h2>Interactive Dataset: Bus Stops in Bristol</h2>
+    <iframe src="https://arcg.is/19ueD02"></iframe>
+
+    <div class="home-button">
+      <a href="index.html" class="w3-button">Home</a>
+    </div>
+  </main>
+</body>
+</html>

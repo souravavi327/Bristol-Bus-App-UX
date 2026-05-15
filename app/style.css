@@ -1,0 +1,54 @@
+body {
+  font-family: 'Fresca', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+header {
+  padding: 20px;
+  background: url('https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.heading {
+  font-family: 'Sigmar One', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00bfff; /* sky blue */
+}
+
+.search {
+  float: right;
+}
+
+nav, main {
+  padding: 1em;
+}
+
+.tab {
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+.w3-bar .w3-button {
+  border-radius: 6px;
+  margin-right: 8px;
+}
+
+.w3-bar .w3-button:hover {
+  background-color: #ddd; /* Light gray on hover */
+}
+
+@media (max-width: 600px) {
+  .search {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+  }
+}

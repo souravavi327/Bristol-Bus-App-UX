@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bristol Bus App - Fares</title>
+
+    <!-- External Styles & Fonts -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <script src="/script.js" defer></script>
+    <style><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bristol Bus App - Fares</title>
+
+    <!-- External Styles & Fonts -->
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Sigmar+One&display=swap" rel="stylesheet">
+
+    <script src="/script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Fresca', sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            padding: 15px;
+            background: url('https://www.shutterstock.com/image-photo/terminal-buses-passengers-on-road-260nw-2503461211.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+        }
+
+        .heading {
+            font-family: 'Sigmar One', cursive;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00bfff; /* sky blue */
+        }
+
+        .search {
+            float: right;
+        }
+
+        nav {
+            padding: 15px;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .w3-button {
+            margin: 10px;
+            font-family: 'Sigmar One', cursive;
+            font-size: 1.1rem;
+        }
+
+        .text-content {
+            margin-top: 30px;
+            text-align: center;
+            font-family: 'Fresca', sans-serif;
+            line-height: 1.6;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .images-container img {
+            width: 48%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Styling for third image that is under the buttons */
+        .third-image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-top: 40px;
+        }
+
+        .sign-in-button {
+            float: right;
+            font-family: 'Sigmar One', cursive;
+        }
+
+        /* Table Styles */
+        .table-container {
+            padding: 2em;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #00bfff;
+            color: white;
+            font-family: 'Sigmar One', cursive;
+        }
+
+        td {
+            font-family: 'Fresca', sans-serif;
+            color: black;
+        }
+
+        h1 {
+            font-family: 'Sigmar One', cursive;
+            font-size: 2rem;
+            text-align: center;
+            color: #00bfff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="heading">
+        <a href="index.html" style="text-decoration: none; color: #00bfff;">Bristol Bus App</a>
+    </div>
+    <form class="search" action="search.html">
+        <input name="searchterm" placeholder="Search routes..." type="text" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <a href="signin.html" class="w3-button w3-blue sign-in-button">Sign In</a> <!-- Sign In button -->
+</header>
+
+    <nav>
+        <div class="button-container">
+            <a href="operator.html" class="w3-button w3-blue">Bus Operator Details</a>
+            <a href="map.html" class="w3-button w3-blue">Route Map</a>
+            <a href="fares.html" class="w3-button w3-blue">Fares</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Fare Information</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fare Type</th>
+                        <th>Buy Online</th>
+                        <th>First Bus App</th>
+                        <th>Shop</th>
+                        <th>On Bus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Adult - Single (up to 6 miles)</td>
+                        <td>-</td>
+                        <td>£2.40</td>
+                        <td>£2.40</td>
+                        <td>£2.40</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - FirstDay</td>
+                        <td>-</td>
+                        <td>£6.50</td>
+                        <td>from £6.50</td>
+                        <td>£6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - FirstMonth</td>
+                        <td>from £92.00</td>
+                        <td>£92.00</td>
+                        <td>from £92.00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - FirstYear</td>
+                        <td>-</td>
+                        <td>£924.00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - FirstWeek</td>
+                        <td>from £26.50</td>
+                        <td>£26.50</td>
+                        <td>from £26.50</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - BristolRider Day</td>
+                        <td>-</td>
+                        <td>from £6.50</td>
+                        <td>£6.50</td>
+                        <td>£6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Adult - BristolRider Week</td>
+                        <td>-</td>
+                        <td>from £26.50</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Young People (16-21) - Single (up to 6 miles)</td>
+                        <td>-</td>
+                        <td>£2.16</td>
+                        <td>£2.16</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Young People (16-21) - FirstDay</td>
+                        <td>-</td>
+                        <td>£5.90</td>
+                        <td>from £5.90</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Young People (16-21) - FirstMonth</td>
+                        <td>from £82.80</td>
+                        <td>£82.80</td>
+                        <td>from £82.80</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Young People (16-21) - FirstYear</td>
+                        <td>-</td>
+                        <td>£831.60</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Young People (16-21) - FirstWeek</td>
+                        <td>from £23.85</td>
+                        <td>£23.85</td>
+                        <td>from £23.85</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Student - Single (up to 6 miles)</td>
+                        <td>-</td>
+                        <td>£2.16</td>
+                        <td>£2.16</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Student - FirstDay</td>
+                        <td>-</td>
+                        <td>£5.90</td>
+                        <td>from £5.90</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Student - FirstMonth</td>
+                        <td>from £82.80</td>
+                        <td>£82.80</td>
+                        <td>from £82.80</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Student - FirstYear</td>
+                        <td>-</td>
+                        <td>£831.60</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Student - FirstWeek</td>
+                        <td>from £23.85</td>
+                        <td>£23.85</td>
+                        <td>from £23.85</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Children (5-15) - Single (up to 6 miles)</td>
+                        <td>-</td>
+                        <td>£1.00</td>
+                        <td>£1.00</td>
+                        <td>£1.00</td>
+                    </tr>
+                    <tr>
+                        <td>Children (5-15) - FirstDay</td>
+                        <td>-</td>
+                        <td>£3.30</td>
+                        <td>from £3.30</td>
+                        <td>£3.30</td>
+                    </tr>
+                    <tr>
+                        <td>Children (5-15) - FirstMonth</td>
+                        <td>from £46.00</td>
+                        <td>£46.00</td>
+                        <td>from £46.00</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Children (5-15) - FirstYear</td>
+                        <td>-</td>
+                        <td>£462.00</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Group - FirstDay</td>
+                        <td>-</td>
+                        <td>£13.00</td>
+                        <td>from £13.00</td>
+                        <td>£13.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Bristol Bus App. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

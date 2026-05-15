@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Search Results</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="heading">Search Results</div>
+    </header>
+
+    <main>
+      <h2>Search Results for: <span id="search-term"></span></h2>
+      <div id="results">
+        <!-- The search results will be dynamically inserted here -->
+      </div>
+    </main>
+
+    <script>
+      // Get the search term from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const searchTerm = urlParams.get('searchterm');
+      
+      // Display the search term on the page
+      document.getElementById('search-term').textContent = searchTerm;
+
+      // Example of displaying some mock results
+      const results = [
+        'Route 1: City Centre to Temple Meads',
+        'Route 2: City Centre to Clifton',
+        'Route 3: Temple Meads to Cabot Circus',
+      ];
+
+      const resultsContainer = document.getElementById('results');
+      results.forEach(result => {
+        const p = document.createElement('p');
+        p.textContent = result;
+        resultsContainer.appendChild(p);
+      });
+    </script>
+  </body>
+</html>
